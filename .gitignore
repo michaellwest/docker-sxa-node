@@ -1,0 +1,8 @@
+﻿data/**/*
+data/**
+!data/*/
+!data/**/*/
+!data/**/*/.gitkeep
+theme/**/*
+!theme/**/*/.gitkeep
+
