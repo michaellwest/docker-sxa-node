@@ -8,16 +8,14 @@ Run from within the terminal:
 
 ```
 docker-compose up -d
+```
+
+If you need to enable the SPE services to allow for files to be uploaded you can follow these steps:
+
+```
 docker exec -it docker-sxa-node_cm_1 powershell
-```
-
-Run from within the cm container:
-
-```
 cd C:\inetpub\wwwroot\App_Config\Include\z.Feature.Overrides
-
 Get-Item -Path .\z.SPE.Sync.Enabler.Gulp.config.disabled | Rename-Item -NewName z.SPE.Sync.Enabler.Gulp.config
-
 exit
 ```
 
