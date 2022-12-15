@@ -2,7 +2,7 @@ version: "2.4"
 
 services:
   node:
-    image: ${REGISTRY}node:${NODE_VERSION}-nanoserver-${NANOSERVER_VERSION}
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-node:${NODE_VERSION}-nanoserver-${NANOSERVER_VERSION}
     command: ['cmd.exe', '/c', 'ping -n 1800 127.0.0.1 >NUL']
     build:
       context: ./docker/build/node
